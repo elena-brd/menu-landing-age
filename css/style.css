@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 2rem;
+    margin: 2.5rem;
+}
+
+.logo {
+    font-family: 'Satisfy', cursive;
+}
+
+.btn-menu,
+.btn-book {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4rem 2.5rem;
+    border-radius: 2px;
+    font-weight: 500;
+    background: #dda15e;
+    color: #fff;
+}
+
+.btn-menu:hover,
+.btn-book:hover {
+    background: #bc6c25;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #181818;
+    background: #fff;
+    line-height: 1.4;
+}
+
+/* header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 5rem;
+}
+
+#main-nav .navbar ul {
+    display: flex;
+}
+
+#main-nav .navbar a {
+    margin: 0 1rem;
+    color: #181818;
+    font-weight: 500;
+}
+
+/* showcase */
+#showcase {
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 95vh;
+    width: 100%;
+    padding-top: 10rem;
+}
+
+#showcase .title,
+#showcase-menu .title-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    background: rgba(231, 231, 231, 0.3);
+}
+
+#showcase .title h1,
+#showcase-menu .title-menu h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #181818;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+/* about */
+#about img {
+    width: 100%;
+}
+
+#about .column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-row: auto;
+    gap: 2rem;
+}
+
+#about .box-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#about .box-info h3 {
+    font-size: 4rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.2;
+}
+
+/* quotes */
+#quotes {
+    background: url('../img/quotes.jpg') no-repeat center/cover;
+    height: 50vh;
+    width: 100%;
+}
+
+#quotes h2 {
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    font-size: 2rem;
+}
+
+/* contact */
+#contact .column img {
+    width: 100%;
+}
+
+#contact .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    height: 100%;
+    width: 100%;
+    background: rgba(231, 231, 231, 0.3);
+}
+
+#contact .card-info h3 {
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#contact .btn-book {
+    margin: 1rem 0;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #bc6c25;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h4,
+footer h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.social-media i {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #fff;
+}
+
+
+#menu-card .column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#menu-card h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+#showcase-menu {
+    background: url('../img/quotes.jpg') no-repeat center center/cover;
+    height: 95vh;
+    width: 100%;
+    padding-top: 10rem;
+}
